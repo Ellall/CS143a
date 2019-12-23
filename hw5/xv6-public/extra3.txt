@@ -1,0 +1,2 @@
+After the error message is outputted, the reverse of wrprotect is done at that address.
+If a user tries to write in a protect page, it will get that page at that address and |= with PTE_W which will give it write access again.

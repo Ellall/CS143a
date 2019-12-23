@@ -1,0 +1,3 @@
+trap in trap.c is called when a test program tries to access the write protect page.
+I checked to see if the trap number == T_PGFLT which is a page fault
+if it is then I print out which process is accessing that address at that ip instead of the usual error message.
